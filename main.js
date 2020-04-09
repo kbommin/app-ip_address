@@ -76,6 +76,9 @@ class IpAddress {
  "ipv4":firstIpv4Address,
 "ipv6":mappedIpv6Address
 }
+
+log.info(firstIpAddress);
+
   return callback(firstIpAddress, callbackError);
 }
 

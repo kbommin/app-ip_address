@@ -86,14 +86,14 @@ function main() {
     console.log(`\n--- Test Number ${i + 1} getFirstIpAddress(${sampleCidrs[i]}) ---`);
     // Call getFirstIpAddress and pass the test subnet and an anonymous callback function.
     // The callback is using the fat arrow operator: () => { }
-    getFirstIpAddress(sampleCidrs[i], (data, error) => {
+    getFirstIpAddress(sampleCidrs[i], (data, data2, error) => {
       // Now we are inside the callback function.
       // Display the results on the console.
       
       if (error) {
         console.error(`  Error returned from GET request: ${error}`);
       }
-      console.log(`  Response returned from GET request: {"ipv4":"${data}","ipv6":"${data}"`);
+      console.log(`  Response returned from GET request: {"ipv4":"${data}","ipv6":"${data2}"`);
     });
   }
   // Iterate over sampleIpv4s and pass the element's value to getIpv4MappedIpv6Address().
