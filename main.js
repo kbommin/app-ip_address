@@ -46,6 +46,7 @@ class IpAddress {
   let firstIpAddress = null;
   let callbackError = null;
   let mappedIpv6Address = null;
+  let firstIpv4Address = null;
 
   // Instantiate an object from the imported class and assign the instance to variable cidr.
   const cidr = new IPCIDR(cidrStr);
