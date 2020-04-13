@@ -73,11 +73,13 @@ class IpAddress {
   // The IAP convention is to pass returned data as the first argument and error
   // data as the second argument to the callback function.
 
+// Initialize a json object to that carries multiple data thru callback function
   firstIpAddress = {
  "ipv4":firstIpv4Address,
 "ipv6":mappedIpv6Address
 }
 
+//debugging purpose
 log.info(firstIpAddress);
 
   return callback(firstIpAddress, callbackError);
